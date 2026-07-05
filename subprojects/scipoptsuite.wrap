@@ -1,0 +1,5 @@
+[wrap-file]
+directory = scipoptsuite-10.0.2
+source_url = https://www.scipopt.org/download/release/scipoptsuite-10.0.2.tgz
+source_filename = scipoptsuite-10.0.2.tgz
+source_hash = eecc29f31e8c8a3089c95ef99dd310d05e1546ba40f4ff36551d75a5f5c47073

@@ -1,0 +1,49 @@
+# maffe
+
+`maffe` is an exact and heuristic solver for maximum agreement forest for two or more rooted phylogenetic trees.
+
+## Dependencies
+
+- C++23 compiler
+- Meson >= 1.3
+- Ninja
+- CMake
+- Git
+- pkg-config
+- patch
+
+The solver depends on SCIP Optimization Suite 10.0.2, HiGHS 1.15.1, and SoPlex, which are automatically included as submodules. The competition build also includes ConicBundle for the heuristic binary.
+We optionally support Gurobi as (I)LP backend and expose Python bindings.
+
+## Build
+
+On Debian/Ubuntu:
+
+```sh
+sudo apt-get update
+sudo apt-get install -y build-essential meson ninja-build cmake git pkg-config patch
+```
+
+Configure and build:
+
+```sh
+meson setup build --buildtype=release
+meson compile -C build
+```
+
+Run the solver with:
+
+```sh
+./build/maffe < instance.trees
+```
+
+## Competition Build
+
+To build the competition binaries, which were submitted to optil.io and to the PACE Challenge 2026, use the Docker-based build script:
+
+```sh
+./scripts/build_competition.sh
+```
+
+This writes static binaries `maffe-exact`, `maffe-heuristic`, and `maffe-lowerbound` to `dist-competition/`.
+However, for non-competition use, we recommend the default build.

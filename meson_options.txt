@@ -1,0 +1,20 @@
+option(
+  'competition',
+  type : 'boolean',
+  value : false,
+  description : 'Build the competition-oriented profile.',
+)
+
+option(
+  'python',
+  type : 'boolean',
+  value : false,
+  description : 'Build the optional Python module.',
+)
+
+option(
+  'gurobi',
+  type : 'feature',
+  value : 'disabled',
+  description : 'Build with Gurobi support and use Gurobi as SCIP LP solver.',
+)

@@ -1,0 +1,6 @@
+[wrap-file]
+directory = ConicBundle
+source_url = https://www-user.tu-chemnitz.de/~helmberg/ConicBundle/CB_v1.a.2.tgz
+source_filename = CB_v1.a.2.tgz
+source_hash = 2baec791c00dbee164c5cd97b143206de37742c6263a1105282c311da0051eef
+patch_directory = conicbundle

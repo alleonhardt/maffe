@@ -1,0 +1,18 @@
+diff --git a/highs/CMakeLists.txt b/highs/CMakeLists.txt
+index fbdd7d3..3221f11 100644
+--- a/highs/CMakeLists.txt
++++ b/highs/CMakeLists.txt
+@@ -260,13 +260,6 @@ else()
+ 
+   target_include_directories(highs PRIVATE ${include_dirs})
+ 
+-  target_include_directories(highs PRIVATE
+-    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/highs/hipo>
+-    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/highs/hipo/auxiliary>
+-    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/highs/hipo/factorhighs>
+-    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/highs/hipo/ipm>
+-  )
+-
+   if(MSVC)
+     if (NOT HIGHS_GPU_LIB)
+       list(APPEND highs_compile_opts

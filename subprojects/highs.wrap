@@ -1,0 +1,6 @@
+[wrap-git]
+directory = highs
+url = https://github.com/ERGO-Code/HiGHS.git
+revision = 04024d701f79feb8e2f18bc3df0dffc04ef05088
+depth = 1
+diff_files = highs/remove-unused-hipo-includes.diff
