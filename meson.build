@@ -201,11 +201,11 @@ cli_sources = [
 ]
 
 cli_link_args = []
-if competition
-  cli_link_args += [
-    '-static',
-  ]
-endif
+#if competition
+#  cli_link_args += [
+#    '-static',
+#  ]
+#endif
 
 competition_cli_targets = [
   ['maffe-exact', '-1', '0', '0'],
